@@ -1,0 +1,829 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    meta tags
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    title tag
+    -->
+    <title>Binance Cat</title>
+
+    <!--
+    favicon
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
+    <!--
+    stylesheets
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/overlay-scrollbars.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <!--
+    start
+    -->
+    <div class="preloader">
+        <div class="preloader-wrapper">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 0 200 200">
+                <g class="pre load6">
+                    <path fill="#1B1A1C" d="M124.5,57L124.5,57c0,3.9-3.1,7-7,7h-36c-3.9,0-7-3.1-7-7v0c0-3.9,3.1-7,7-7h36
+                C121.4,50,124.5,53.1,124.5,57z"/>
+                    <path fill="#1B1A1C" d="M147.7,86.9L147.7,86.9c-2.7,2.7-7.2,2.7-9.9,0l-25.5-25.5c-2.7-2.7-2.7-7.2,0-9.9l0,0
+                c2.7-2.7,7.2-2.7,9.9,0L147.7,77C150.5,79.8,150.5,84.2,147.7,86.9z"/>
+                    <path fill="#1B1A1C" d="M143,74.5L143,74.5c3.9,0,7,3.1,7,7v36c0,3.9-3.1,7-7,7l0,0c-3.9,0-7-3.1-7-7v-36
+                C136,77.6,139.1,74.5,143,74.5z"/>
+                    <path fill="#1B1A1C" d="M148.4,112.4L148.4,112.4c2.7,2.7,2.7,7.2,0,9.9L123,147.7c-2.7,2.7-7.2,2.7-9.9,0h0c-2.7-2.7-2.7-7.2,0-9.9
+                l25.5-25.5C141.3,109.6,145.7,109.6,148.4,112.4z"/>
+                    <path fill="#1B1A1C"
+                          d="M125.5,143L125.5,143c0,3.9-3.1,7-7,7h-36c-3.9,0-7-3.1-7-7l0,0c0-3.9,3.1-7,7-7h36 C122.4,136,125.5,139.1,125.5,143z"/>
+                    <path fill="#1B1A1C" d="M52.3,113.1L52.3,113.1c2.7-2.7,7.2-2.7,9.9,0l25.5,25.5c2.7,2.7,2.7,7.2,0,9.9h0c-2.7,2.7-7.2,2.7-9.9,0
+                L52.3,123C49.5,120.2,49.5,115.8,52.3,113.1z"/>
+                    <path fill="#1B1A1C"
+                          d="M57,75.5L57,75.5c3.9,0,7,3.1,7,7v36c0,3.9-3.1,7-7,7h0c-3.9,0-7-3.1-7-7v-36C50,78.6,53.1,75.5,57,75.5z"/>
+                    <path fill="#1B1A1C" d="M86.9,52.3L86.9,52.3c2.7,2.7,2.7,7.2,0,9.9L61.5,87.6c-2.7,2.7-7.2,2.7-9.9,0l0,0c-2.7-2.7-2.7-7.2,0-9.9
+                L77,52.3C79.8,49.5,84.2,49.5,86.9,52.3z"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+    <!--
+    start
+    -->
+    <div class="navigation">
+        <div class="navigation-wrapper">
+            <div class="container">
+                <div class="navigation-inner">
+                    <div class="navigation-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" style="height: 60px" alt="orions-logo">
+                        </a>
+                    </div>
+                    <div class="navigation-menu">
+                        <div class="mobile-header">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo-white.png" alt="image">
+                                </a>
+                            </div>
+                            <ul>
+                                <li class="close-button">
+                                    <i class="fas fa-times"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="parent">
+                            <li>
+                                <a href="index.html" class="link-underline link-underline-1">
+                                    <span>HOME</span>
+                                </a>
+                            </li>
+                            <li class="has-child">
+                                <a href="#TOKENOMICS" class="link-underline link-underline-1">
+                                    <span>TOKENOMICS</span>
+                                </a>
+                            </li>
+                            <li class="has-child">
+                                <a href="#ABOUT" class="link-underline link-underline-1">
+                                    <span>ABOUT</span>
+                                </a>
+                            </li>
+                            <li class="has-child">
+                                <a href="#DEVELOPMENT" class="link-underline link-underline-1">
+                                    <span>DEVELOPMENT</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#FAQ" class="link-underline link-underline-1">
+                                    <span>FAQ</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <div class="background-pattern">
+                            <div class="background-pattern-img background-loop"
+                                 style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                            <div class="background-pattern-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-bar">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+    <!--
+    start
+    -->
+    <div class="hero hero-1">
+        <div class="hero-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-0 order-lg-1 col-10 offset-1 order-2">
+                        <div class="hero-content">
+                            <h1 class="c-dark">Binance Cat</h1>
+                            <p class="large c-grey">Embrace this unstoppable digital financial revolution and witness
+                                the next king of meme.
+                            <div class="download-button-group">
+
+                                <a href="#" class="download-button download-button-apple">
+                                    <div class="download-button-inner">
+                                        <div class="download-button-icon c-pink">
+                                            <i class="fab">🔥</i>
+                                        </div>
+                                        <div class="download-button-content">
+                                            <h5 class="c-grey upper ls-1">Binance Cat</h5>
+                                            <h3 class="c-dark ls-2">in progress...</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-0 order-lg-2 col-10 offset-1 order-1">
+                        <div class="hero-image">
+                            <img class="drop-shadow" src="assets/images/hero-phone.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+    <!--
+    start
+    -->
+    <div class="app-feature app-feature-1" id="TOKENOMICS">
+        <div class="app-feature-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-10 offset-1">
+                        <div class="section-heading center width-64">
+                            <div class="sub-heading c-blue upper ls-1">
+                                <i class="las la-cog"></i>
+                                <h5>Binance Cat What can be done?</h5>
+                            </div>
+                            <div class="main-heading c-dark">
+                                <h1>Tokenomics</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 gy-5">
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-redo-alt"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Auto Liquidity Pool</h3>
+                                </a>
+                                <p class="c-grey">
+                                    In order to ensure the stable growth of the token price, 10% of each transaction
+                                    will be automatically added to the liquidity supply pool.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-coins"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Reflections</h3>
+                                </a>
+                                <p class="c-grey">
+                                    Make your assets work for you 24 hours a day,per transaction 2% is Redistributed to
+                                    all existing holders for lasting income.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-0 col-10 offset-1">
+                        <div class="app-feature-single app-feature-single-2">
+                            <div class="app-feature-single-wrapper">
+                                <a href="#" class="icon">
+                                    <i class="las la-user-shield"></i>
+                                </a>
+                                <a href="#">
+                                    <h3 class="c-dark">Security Lock</h3>
+                                </a>
+                                <p class="c-grey">Community centric, Liquidity will be locked in the PancakeSwap pool to
+                                    keep your transactions safe and secure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+    <!--
+    start
+    -->
+    <div class="video-section">
+        <div class="video-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1 order-lg-1 col-10 offset-1 order-2">
+                        <div class="video-section-content">
+                            <div class="section-heading section-heading-1 center-responsive c-white">
+                                <div class="main-heading">
+                                    <h1>Building a new king of meme tokens with the community at the center.</h1>
+                                </div>
+                            </div>
+                            <a href="https://twitter.com/Shengweihu_Bro" class="button button-1">
+                                <div class="button-inner">
+                                    <div class="button-content">
+                                        <h4><i class="fab fa-twitter"></i>Twitter</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 order-lg-2 order-1">
+                        <div class="video-section-video">
+                            <figure>
+                                <img class="drop-shadow-1" src="assets/images/video-img.png" alt="image">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-pattern background-pattern-radius drop-shadow-1">
+                    <div class="background-pattern-img background-loop"
+                         style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                    <div class="background-pattern-gradient"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+    <!--
+    start
+    -->
+    <div class="feature-section feature-section-0 feature-section-spacing-1" id="ABOUT">
+        <div class="feature-section-wrapper">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-7 offset-lg-0 order-lg-1 col-md-8 offset-md-2 col-10 offset-1 order-2">
+                        <div class="feature-section-content">
+                            <div class="section-heading">
+                                <div class="sub-heading c-blue upper ls-1">
+                                    <i class="las la-cog"></i>
+                                    <h5>What are we doing?</h5>
+                                </div>
+                                <div class="main-heading c-dark">
+                                    <h1>About Binance Cat</h1>
+                                </div>
+                            </div>
+                            <p class="c-grey">The Binance Cat will take you into a whole new world. You will witness the
+                                birth of a miracle.</p>
+                            <div class="icon-text-group">
+                                <div class="icon-text">
+                                    <i class="las la-user-friends"></i>
+                                    <h4 class="c-dark">Community Focused</h4>
+                                    <p class="c-grey">The dev team burned all of their tokens and participated with
+                                        everyone else.</p>
+                                </div>
+                                <div class="icon-text">
+                                    <i class="las la-window-close"></i>
+                                    <h4 class="c-dark">Destruction authority</h4>
+                                    <p class="c-grey">the development team will destroy the contract ownership after the
+                                        ecological construction is over.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-0 order-lg-2 col-10 offset-1 order-1">
+                        <div class="feature-section-image">
+                            <img src="assets/images/feature-section-1-phone.png" class="phone" alt="phone">
+                            <div class="background-pattern background-pattern-radius">
+                                <div class="background-pattern-img background-loop"
+                                     style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                <div class="background-pattern-gradient"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+    <!--
+       feature section - start
+       -->
+    <div class="feature-section feature-section-1 feature-section-spacing-2">
+        <div class="feature-section-wrapper">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-5 offset-lg-0 col-10 offset-1">
+                        <div class="feature-section-image">
+                            <img src="assets/images/feature-section-1-phone.png" class="phone" alt="phone">
+                            <div class="background-pattern background-pattern-radius-reverse">
+                                <div class="background-pattern-img background-loop"
+                                     style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                                <div class="background-pattern-gradient"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="feature-section-content">
+                            <div class="section-heading">
+                                <div class="sub-heading c-blue upper ls-1">
+                                    <i class="las la-cog"></i>
+                                    <h5>What happened?</h5>
+                                </div>
+                                <div class="main-heading c-dark">
+                                    <h1>Mechanism</h1>
+                                </div>
+                            </div>
+                            <div class="icon-text-1-group">
+                                <div class="icon-text-1">
+                                    <i class="las la-redo-alt"></i>
+                                    <div>
+                                        <h4 class="c-dark">Auto Liquidity Pool</h4>
+                                        <p class="c-grey">10% of each trade will be automatically added to liquidity.</p>
+                                    </div>
+                                </div>
+                                <div class="icon-text-1">
+                                    <i class="las la-coins"></i>
+                                    <div>
+                                        <h4 class="c-dark">Reflections</h4>
+                                        <p class="c-grey">2% of each transaction will be distributed to all holders.</p></div>
+                                </div>
+                                <div class="icon-text-1"><i class="las la-cloud-sun"></i>
+                                    <div><h4 class="c-dark">Ecological Fund</h4>
+                                        <p class="c-grey">The remaining 4% will be added to the ecological development fund.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    feature section - end
+    -->
+
+    <!--
+    start
+    -->
+    <div class="pricing-section" id="DEVELOPMENT">
+        <div class="pricing-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="section-heading center c-white">
+                            <div class="main-heading">
+                                <h1 style="margin-bottom: 3rem">Development</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="pricing-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="pricing-single basic">
+                                                <h5 class="plan">March 2022</h5>
+
+                                                <a href="#" class="button button-basic">
+                                                    <div class="button-inner">
+                                                        <div class="button-content">
+                                                            <h4>The first stage</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <ul>
+                                                    <li class="available">build community</li>
+                                                    <li class="available">Listing Binance Cat Token</li>
+                                                    <li class="available">Improve infrastructure</li>
+                                                    <li>Conduct a pre-sale launch</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="pricing-single standard">
+                                                <h5 class="plan">June 2022</h5>
+                                                <a href="#" class="button button-standard">
+                                                    <div class="button-inner">
+                                                        <div class="button-content">
+                                                            <h4>second stage</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <ul>
+                                                    <li>Decentralized Exchange</li>
+                                                    <li>Platform docking</li>
+                                                    <li>Development related ecology</li>
+                                                    <li>Holder Community Meeting</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="pricing-single premium">
+                                                <h5 class="plan">September 2022</h5>
+
+                                                <a href="#" class="button button-premium">
+                                                    <div class="button-inner">
+                                                        <div class="button-content">
+                                                            <h4>The third phase</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <ul>
+                                                    <li>Build Metaverse Ecology</li>
+                                                    <li>Release NFT series</li>
+                                                    <li>Online free market</li>
+                                                    <li>completely decentralized</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-pattern background-pattern-1">
+                <div class="background-pattern-img background-loop"
+                     style="background-image: url(assets/images/patterns/pattern.jpg);"></div>
+                <div class="background-pattern-gradient"></div>
+                <div class="background-pattern-bottom">
+                    <div class="image" style="background-image: url(assets/images/patterns/pattern-1.jpg)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+
+    <!--
+    start
+    -->
+    <div class="faq-section" style="margin-top: 5rem" id="FAQ">
+        <div class="faq-section-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-10 offset-xxl-1 col-lg-12 offset-lg-0 col-10 offset-1">
+                        <div class="section-heading center width-64">
+                            <div class="main-heading c-dark">
+                                <h1>FAQ</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-9 col-md-8 col-10">
+                        <div class="faq-wrapper">
+                            <div class="faq" id="faq-accordion">
+                                <!--
+                                accordion item - start
+                                -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="faq-1">
+                                        <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#faq-collapse-1"
+                                                aria-expanded="true"
+                                                aria-controls="faq-collapse-1">
+                                            <span>What is Binance Cat?</span>
+                                        </button>
+                                    </div>
+                                    <div
+                                            id="faq-collapse-1"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="faq-1"
+                                            data-bs-parent="#faq-accordion">
+                                        <div class="accordion-body">
+                                            <p>Binance Cat is a decentralized meme token deployed on the BSC smart
+                                                chain.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                accordion item - end
+                                -->
+                                <!--
+                                accordion item - start
+                                -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="faq-2">
+                                        <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#faq-collapse-2"
+                                                aria-expanded="true"
+                                                aria-controls="faq-collapse-2">
+                                            <span>What are the characteristics of Binance Cat?</span>
+                                        </button>
+                                    </div>
+                                    <div
+                                            id="faq-collapse-2"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="faq-2"
+                                            data-bs-parent="#faq-accordion">
+                                        <div class="accordion-body">
+                                            <p>Binance Cat has an excellent sustainable development mechanism, and users
+                                                will receive dividends for each transaction, which means that the longer
+                                                the holding time, the dividends will continue to increase, and the
+                                                liquidity will continue to increase during transactions.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                accordion item - end
+                                -->
+                                <!--
+                                accordion item - start
+                                -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="faq-3">
+                                        <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#faq-collapse-3"
+                                                aria-expanded="true"
+                                                aria-controls="faq-collapse-3">
+                                            <span>What kind of ecology will Binance Cat have?</span>
+                                        </button>
+                                    </div>
+                                    <div
+                                            id="faq-collapse-3"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="faq-3"
+                                            data-bs-parent="#faq-accordion">
+                                        <div class="accordion-body">
+                                            <p>We will soon release the Binance Cat series of NFTs, which are purchased
+                                                using Binance Cat tokens, Binance Cat games will be released at a later
+                                                date, and Binance Cat tokens will also be used for trading.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                accordion item - end
+                                -->
+                                <!--
+                                accordion item - start
+                                -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="faq-4">
+                                        <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#faq-collapse-4"
+                                                aria-expanded="true"
+                                                aria-controls="faq-collapse-4">
+                                            <span>What kind of partners and influencers are there?</span>
+                                        </button>
+                                    </div>
+                                    <div
+                                            id="faq-collapse-4"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="faq-4"
+                                            data-bs-parent="#faq-accordion">
+                                        <div class="accordion-body">
+                                            <p>We have strong connections with over a dozen Twitter bloggers and many
+                                                community platforms and will continue to promote Binance Cat tokens.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                accordion item - end
+                                -->
+                                <!--
+                                accordion item - start
+                                -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="faq-5">
+                                        <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#faq-collapse-5"
+                                                aria-expanded="true"
+                                                aria-controls="faq-collapse-5">
+                                            <span>Is Binance Cat Safe?</span>
+                                        </button>
+                                    </div>
+                                    <div
+                                            id="faq-collapse-5"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="faq-5"
+                                            data-bs-parent="#faq-accordion">
+                                        <div class="accordion-body">
+                                            <p>Binance Cat will disclose the contract source code and deploy it on the
+                                                more mature BSC smart chain, the liquidity will be locked, and the
+                                                contract ownership will be given up after the ecological construction is
+                                                completed, which is absolutely safe and reliable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                accordion item - end
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+    <!--
+     start
+       -->
+    <div class="instagram">
+        <div class="row">
+            <div class="col-xxl-10 offset-xxl-1 col-lg-12 offset-lg-0 col-10 offset-1">
+                <div class="section-heading center width-64">
+
+                    <div class="main-heading c-dark" style="margin: 3rem 0">
+                        <h5 class="plan">Partners & Technical Support</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="instagram-wrapper">
+            <div class="instagram-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="instagram-slide">
+                                <img src="assets/images/instagram/instagram-img-1.png" style="width: 200px"
+                                     alt="instagram-slide-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-slide">
+                                <img src="assets/images/instagram/instagram-img-2.png" style="width: 200px"
+                                     alt="instagram-slide-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-slide">
+                                <img src="assets/images/instagram/instagram-img-3.png" style="width: 200px"
+                                     alt="instagram-slide-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-slide">
+                                <img src="assets/images/instagram/instagram-img-4.png" style="width: 200px"
+                                     alt="instagram-slide-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-slide">
+                                <img src="assets/images/instagram/instagram-img-5.png" style="width: 200px"
+                                     alt="instagram-slide-image">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="instagram-slide">
+                                <img src="assets/images/instagram/instagram-img-6.png" style="width: 200px"
+                                     alt="instagram-slide-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--
+    end
+    -->
+
+
+    <!--
+    start
+    -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
+                        <div class="footer-row">
+                            <div class="footer-detail">
+                                <a href="#">
+                                    <img src="assets/images/logo.png" style="height: 60px" alt="footer-logo">
+                                </a>
+                                <p class="c-grey-1">Building a new king of meme tokens with the community at the
+                                    center.</p>
+                                <div class="links">
+                                    <a class="link-underline">
+                                        <span>© 2022 by Binance Cat</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer-list footer-social social-gradient">
+                                <h6>Follow</h6>
+                                <ul>
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/Shengweihu_Bro" class="link-underline">
+                                            <i class="fab fa-twitter"></i>
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li class="telegram">
+                                        <a href="https://t.me/Binance Cat_CN" class="link-underline">
+                                            <i class="fab fa-telegram"></i>
+                                            <span>telegram</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-pattern" style="background-image: url(assets/images/patterns/pattern-1.jpg)"></div>
+        </div>
+    </footer>
+    <!--
+    end
+    -->
+
+</div>
+
+<!--
+scripts
+-->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/glightbox.min.js"></script>
+<script src="assets/js/overlay-scrollbars.min.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
